@@ -17,5 +17,26 @@ namespace R01_BMI
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            string s1 = tBox1.Text;
+            string s2 = tBox2.Text;
+            double res = 0;
+
+            double height = double.Parse(s1);
+            double weight = double.Parse(s2);
+            height = height / 100; //m変換
+
+            res = weight / (height * height);
+            res=(Math.Round(res, 2, MidpointRounding.AwayFromZero));
+            lbl.Text = res.ToString();
+
+
+
+
+
+        }
     }
 }
+
