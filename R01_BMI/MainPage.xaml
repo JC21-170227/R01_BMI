@@ -8,10 +8,10 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="BMI計算" 
+        <Label Text="BMI計算" FontSize="28"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-        <Label Text="" FontSize="Large" 
+           VerticalOptions="CenterAndExpand"   />
+        <Label Text="" FontSize="25" 
                x:Name="lbl"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
